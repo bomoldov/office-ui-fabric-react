@@ -75,4 +75,13 @@ export class DropdownBasicExample extends React.Component<any, any> {
     );
   }
 
+  public makeList(items) {
+    let list = [];
+    for (let i = 0; i < items; i++) {
+      list.push({ key: i, text: 'Option ' + i });
+    }
+
+    return list;
+  }
+
 }
